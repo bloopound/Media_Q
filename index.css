@@ -57,40 +57,131 @@
 
 
 .container {
-    position: relative;
-    background-image: url("images/Desk_Pad.jpg");
-    background-size: cover;
-    height: 50vw;
+  position: relative;
+  background-image: url("images/Desk_Pad.jpg");
+  background-size: cover;
+  margin-top: 1vh;
+  height: 50vw;
 }
 
 .maintext {
-    position: absolute;
-    height: max-content;
-    width: max-content;
-    padding: 20px;
-    background-color: white;
-    top: 32%;
-    left: 36%;
-  }
+  position: absolute;
+  height: min-content;
+  width: max-content;
+  padding: 1vw;
+  background-color: white;
+  top: 20%;
+  left: 35%;
+}
   
 .font1 {
-    text-align: center;
-    font: normal normal normal 22px/1.4em futura-lt-w01-book,sans-serif;
+  text-align: center;
+  font: normal normal normal 10px/1.4em futura-lt-w01-book,sans-serif;
 }
   
 .font2 {
-    font: normal normal normal 30px/1.4em futura-lt-w01-book,sans-serif;
+  font: normal normal normal 15px/1.4em futura-lt-w01-book,sans-serif;
 }
   
 a.shop_now {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5vh;
 }
   
 a.shop_now:hover {
-    background-image: linear-gradient(white,wheat);
+  background-image: linear-gradient(white,wheat);
 }
+
+
+
+
+.shop-grid1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+}
+  
+.shop-grid1 > div {
+  text-align: center;
+  font-size: 10em;
+}
+  
+.item1 {
+  position: relative;
+}
+  
+.shoptext {
+  position: absolute;
+  font-size: 1.0vh;
+  font-family: monospace;
+  top: 6vh;
+  left: 12vw;
+}
+  
+.maintext2 {
+  font-family: sans-serif; 
+  font-size: medium;
+}
+  
+.item2 {
+  position: relative;
+}
+
+
+
+
+.shop-grid2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  grid-gap: 1vw;
+}
+
+.shop-grid2 > div {
+  text-align: center;
+  font-size: 0.7em;
+  width: fit-content;
+}
+
+
+
+
+.footer-container {
+  background-image: url(images/footer_bg.jpg);
+  background-position: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 0.25vw;
+  justify-content: center;
+}
+
+.fgrid-item {
+  color:rgba(35, 81, 180, 1);
+  padding: 1vw 2vh;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#submit_button { 
+  background-color: rgba(171, 201, 224, 1);
+  opacity: 0.6;
+  max-width: 30vw;
+  margin-top: 1vh;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+}
+
+#submit_button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
