@@ -77,19 +77,19 @@
 .font1 {
   text-align: center;
   font-family: sans-serif;
-  font-size: 0.5em;
+  font-size: 1em;
 }
   
 .font2 {
   font-family: sans-serif;
-  font-size: 0.5em;
+  font-size: 1em;
 }
   
 a.shop_now {
   text-decoration: none;
   display: inline-block;
   padding: 0.5vh;
-  font-size: 0.5em;
+  font-size: 1em;
 }
   
 a.shop_now:hover {
