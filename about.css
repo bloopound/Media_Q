@@ -58,7 +58,7 @@
 
 .about_bg {
   position: relative;
-  background-image: url("images/about_bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about_bg.jpg");
   background-size: cover;
   height: 50vw;
   background-repeat: no-repeat;
@@ -66,7 +66,7 @@
 
 .maintext {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Century Gothic';
@@ -80,7 +80,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Century Gothic';
-  font-size: 0.9em;
+  font-size: 0.5em;
   color: whitesmoke;
 
 }
