@@ -120,15 +120,15 @@ a.shop_now:hover {
   
 .shoptext {
   position: absolute;
-  font-size: 1.0vh;
+  font-size: 0.7em;
   font-family: monospace;
-  top: 6vh;
-  left: 12vw;
+  top: 10%;
+  left: 20%;
 }
   
 .maintext2 {
   font-family: sans-serif; 
-  font-size: medium;
+  font-size: 1em;
 }
   
 .item2 {
@@ -166,7 +166,7 @@ a.shop_now:hover {
 .fgrid-item {
   color:rgba(35, 81, 180, 1);
   padding: 1vw 2vh;
-  font-size: 0.8em;
+  font-size: 0.7em;
   text-align: center;
 }
 
