@@ -123,8 +123,9 @@
 }
 
 #bloopound {
+  width: 84.5vw;
   margin-top: 10px;
-  height: 30vw;
+  height: 40vw;
 }
 
 .titletext2 {
@@ -148,8 +149,9 @@
 }
 
 #ceo {
+  width: 84.5vw;
   margin-top: 10px;
-  height: 30vh;
+  height: 25vh;
 }
 
 
@@ -172,9 +174,12 @@
 }
 
 #submit_button { 
-  background-color: rgba(171, 201, 224, 1);
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
   opacity: 0.6;
+  color: black;
+  border-radius: 25px;
   max-width: 30vw;
+  max-height: 10vh;
   margin-top: 1vh;
   padding-top: 0.5vh;
   padding-bottom: 0.5vh;
@@ -182,6 +187,7 @@
 
 #submit_button:hover {
   opacity: 1;
+  color: #f1f1f1;
 }
 
 
