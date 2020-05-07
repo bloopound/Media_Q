@@ -133,8 +133,9 @@ a.shop_now:hover {
   position: absolute;
   font-size: 0.7em;
   font-family: monospace;
-  top: 8%;
-  left: 24%;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -20%);
 }
   
 .maintext2 {
@@ -191,6 +192,7 @@ a.shop_now:hover {
 }
 
 #submit_button { 
+  font-size: 0.7em;
   background: black;
   border-radius: 10px;
   max-width: 30vw;
@@ -275,7 +277,6 @@ body {
   
   
   
-
   
 .maintext {
   height: max-content;
@@ -336,36 +337,37 @@ a.shop_now {
   
   
   
-  .footer-container {
-    grid-gap: 0.5vw;
-  }
+
+.footer-container {
+  grid-gap: 0.5vw;
+}
   
-  .fgrid-item {
-    padding: 10px 50px;
-    font-size: 1.2em;
-  }
+.fgrid-item {
+  padding: 10px 50px;
+  font-size: 1.2em;
+}
   
-  #email {
-    margin-top: 10px; 
-    width: 200px; 
-    height: 15px;
-  }
+#email {
+  margin-top: 10px; 
+  width: 200px; 
+  height: 15px;
+}
   
-  #submit_button { 
-    background: black;
-    opacity: 0.5;
-    border-radius: 10px;
-    max-width: 30vw;
-    margin-top: 1vh;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-    color: white;
-  }
-  
-  #submit_button:hover {
-    opacity: 0.8;
-  }
- 
+#submit_button { 
+  background: black;
+  opacity: 0.5;
+  border-radius: 10px;
+  max-height: 5vh;
+  max-width: 30vw;
+  margin-top: 1vh;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  color: white;
+}
+    
+#submit_button:hover {
+  opacity: 0.8;
+}
 
 }
 
@@ -555,20 +557,21 @@ a.shop_now {
   }
   
   #submit_button { 
-    background-color: #00E5E5; /*#006FFF, #00E5E5, #0BFF96*/
+    background: black;
     opacity: 0.5;
     border-radius: 10px;
+    max-height: 5vh;
     max-width: 30vw;
     margin-top: 1vh;
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
+    color: white;
   }
-  
+      
   #submit_button:hover {
-    opacity: 1;
+    opacity: 0.8;
   }
  
-  
 }
 
 /* 
