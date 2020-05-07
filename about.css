@@ -31,13 +31,18 @@
   font-size: 36px;
   margin-left: 50px;
 }
-  
+
+.side_nav {
+  display: grid; 
+  grid-template-columns: min-content auto;
+}
+
 .openbtn {
   font-size: 20px;
   cursor: pointer;
   background-color: white;
   color: black;
-  padding: 0px 15px 10px 15px;
+  padding: 10px 15px;
   border: none;
 }
   
@@ -47,10 +52,13 @@
 
 .title {
   font-family: "Century Gothic", Courier, monospace;
-  font-size: 20px;
+  font-size: 1.25em;
   text-decoration: none;
-  display: grid;
-  grid-template-columns: min-content auto;
+  padding-left: 10px;
+}
+
+.top_nav {
+  display: none;
 }
 
   
@@ -74,23 +82,9 @@
   color: whitesmoke;
 }
 
-.maintext1 {
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Century Gothic';
-  font-size: 0.5em;
-  color: whitesmoke;
-
-}
 
 
 
-
-#legacy {
-  height: max-content;
-}
 
 .text1 {
   padding: 20px;
@@ -99,21 +93,12 @@
   font-size: 0.7em;
 }
 
-.titletext1 {
+.titletext {
   font-size: x-large;
   color: white;
   height: fit-content;
   width: fit-content;
 }
-
-#old_office {
-  margin-top: 10px;
-  height: 25vh;
-  width: 80vw;
-}
-  
-
-
 
 .text2 {
   padding: 20px;
@@ -122,8 +107,14 @@
   font-size: 0.7em;
 }
 
+#old_office {
+  margin-top: 10px;
+  height: 25vh;
+  width: 80vw;
+}
+  
 #bloopound {
-  width: 84.5vw;
+  width: 80vw;
   margin-top: 10px;
   height: 40vw;
 }
@@ -133,23 +124,8 @@
   color: white; 
 }
 
-
-
-
-.text3 {
-  padding: 20px;
-  background-color: #191970;
-  color: whitesmoke;
-  font-size: 0.7em;
-}
-
-.titletext3 {
-  font-size: x-large;
-  color: white;
-}
-
 #ceo {
-  width: 84.5vw;
+  width: 80vw;
   margin-top: 10px;
   height: 25vh;
 }
@@ -158,8 +134,7 @@
 
 
 .footer-container {
-  background-image: url(images/footer_bg.jpg);
-  background-position: center;
+  background: linear-gradient(to bottom right, #006FFF, #00E5E5, #0BFF96);
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 0.25vw;
@@ -173,21 +148,22 @@
   text-align: center;
 }
 
+#email {
+  margin-top: 1vh; 
+  width: 25vw; 
+  height: 1.5vh;
+}
+
 #submit_button { 
-  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-  opacity: 0.6;
-  color: black;
-  border-radius: 25px;
+  background: black;
+  border-radius: 10px;
+  font-size: 0.8em;
   max-width: 30vw;
-  max-height: 10vh;
+  max-height: 3vh;
   margin-top: 1vh;
   padding-top: 0.5vh;
   padding-bottom: 0.5vh;
-}
-
-#submit_button:hover {
-  opacity: 1;
-  color: #f1f1f1;
+  color: white;
 }
 
 
@@ -202,7 +178,175 @@
 */
 
 @media screen and (min-width: 1281px) {
+
+body {
+  margin: 0px 5vw 0px 5vw;
+}
     
+.side_nav {
+  display: none;
+}
+    
+.top_nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+    
+.nav-top {
+  height: 20px;
+}
+    
+.nav {
+  padding: 10px 0px 10px 0px;
+  border-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;  
+}
+
+.title {
+  text-decoration: none;
+  width: 12vw;
+  height: 4vh;
+}
+    
+.nav-right {
+  margin-top: 10px;
+  float: right;
+} 
+   
+.nav-right a {
+  border-right: 1px solid black;
+  display: inline;
+  text-decoration: none;
+  font-weight: lighter;
+  max-width: 50px;
+  padding: 10px;
+  color: black;
+}
+    
+.nav-right a.last {
+  border-right: none;
+}
+    
+.nav-bottom {
+  height: 20px;
+}    
+
+
+
+
+.about_bg {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  background-repeat: no-repeat;
+}
+
+.maintext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Century Gothic';
+  font-size: 3em;
+  color: whitesmoke;
+}
+    
+    
+
+
+.text1 {
+  padding: 20px;
+  background-color: #191970;
+  color: whitesmoke;
+  font-size: 1.2em;
+}
+
+.text2 {
+  padding: 20px;
+  background-color: #FF8000;
+  color: whitesmoke;
+  font-size: 1.2em;
+}
+
+.titletext {
+  background: linear-gradient(to right, #FF3F85, #191970);
+  font-size: 2em;
+  color: white;
+  height: fit-content;
+  width: 100%;
+}
+
+.titletext2 {
+  text-align: right;
+  background: linear-gradient(to left, rgb(214, 200, 42), #FF8000);
+  font-size: 2em;
+  color: white;
+  height: fit-content;
+  width: 100%;
+}
+
+#old_office {
+  margin-top: 10px;
+  height: 60vh;
+  width: 65vw;
+}
+
+#bloopound {
+  margin-top: 10px;
+  margin-left: 21vw;
+  height: 60vh;
+  width: 65vw;
+}
+
+#ceo {
+  margin-top: 10px;
+  height: 60vh;
+  width: 65vw;
+}
+
+
+
+
+.footer-container {
+  grid-gap: 0.5vw;
+}
+    
+.fgrid-item {
+  padding: 10px 50px;
+  font-size: 1.2em;
+}
+    
+#email {
+  margin-top: 10px; 
+  width: 200px; 
+  height: 15px;
+}
+    
+#submit_button { 
+  background: black;
+  opacity: 0.5;
+  border-radius: 10px;
+  max-height: 5vh;
+  max-width: 30vw;
+  margin-top: 1vh;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  color: white;
+}
+    
+#submit_button:hover {
+  opacity: 0.8;
+}
+       
 }
 
 /* 
@@ -212,6 +356,174 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
     
+body {
+  margin: 0px 4vw 0px 4vw;
+}
+    
+.side_nav {
+  display: none;
+}
+    
+.top_nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+    
+.nav-top {
+  height: 20px;
+}
+    
+.nav {
+  padding: 10px 0px 10px 0px;
+  border-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;  
+}
+
+.title {
+  text-decoration: none;
+  width: 12vw;
+  height: 4vh;
+}
+    
+.nav-right {
+  margin-top: 10px;
+  float: right;
+} 
+   
+.nav-right a {
+  border-right: 1px solid black;
+  display: inline;
+  text-decoration: none;
+  font-weight: lighter;
+  max-width: 50px;
+  padding: 10px;
+  color: black;
+}
+    
+.nav-right a.last {
+  border-right: none;
+}
+    
+.nav-bottom {
+  height: 20px;
+}    
+
+
+
+
+.about_bg {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  background-repeat: no-repeat;
+}
+
+.maintext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Century Gothic';
+  font-size: 3em;
+  color: whitesmoke;
+}
+    
+    
+
+
+.text1 {
+  padding: 20px;
+  background-color: #191970;
+  color: whitesmoke;
+  font-size: 1.2em;
+}
+
+.text2 {
+  padding: 20px;
+  background-color: #FF8000;
+  color: whitesmoke;
+  font-size: 1.2em;
+}
+
+.titletext {
+  background: linear-gradient(to right, #FF3F85, #191970);
+  font-size: 2em;
+  color: white;
+  height: fit-content;
+  width: 100%;
+}
+
+.titletext2 {
+  text-align: right;
+  background: linear-gradient(to left, rgb(214, 200, 42), #FF8000);
+  font-size: 2em;
+  color: white;
+  height: fit-content;
+  width: 100%;
+}
+
+#old_office {
+  margin-top: 10px;
+  height: 60vh;
+  width: 65vw;
+}
+
+#bloopound {
+  margin-top: 10px;
+  margin-left: 21vw;
+  height: 60vh;
+  width: 65vw;
+}
+
+#ceo {
+  margin-top: 10px;
+  height: 60vh;
+  width: 65vw;
+}
+
+
+
+
+.footer-container {
+  grid-gap: 0.5vw;
+}
+    
+.fgrid-item {
+  padding: 10px 50px;
+  font-size: 1.2em;
+}
+    
+#email {
+  margin-top: 10px; 
+  width: 200px; 
+  height: 15px;
+}
+    
+#submit_button { 
+  background: black;
+  opacity: 0.5;
+  border-radius: 10px;
+  max-height: 5vh;
+  max-width: 30vw;
+  margin-top: 1vh;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  color: white;
+}
+    
+#submit_button:hover {
+  opacity: 0.8;
+}
+
 }
 
 /* 
